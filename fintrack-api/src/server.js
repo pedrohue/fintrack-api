@@ -1,0 +1,13 @@
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send("finTrack API funcionando");
+});
+
+app.listen(3000,()=> {
+    console.log('servidor rodando em http://localhost:3000');
+});
+
+
